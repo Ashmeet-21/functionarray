@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Main{
+
+public static void main(String[]args){
+
+Scanner scn = new Scanner(System.in);
+int n = scn.nextInt();
+int d = scn.nextInt();
+int f = getf(n,d);
+System.out.print(f);
+}
+public static int getf(int n , int d ){
+int counter = 0 ;
+while(n>0){
+int temp = n%10;
+n = n/10;
+if(temp==d){
+counter++;
+}
+}
+return counter;
+}
+}

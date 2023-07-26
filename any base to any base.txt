@@ -1,0 +1,38 @@
+import java.util.*;
+public class Main{
+public static void main(String[]args){
+Scanner scn = new Scanner(System.in);
+int n = scn.nextInt();
+int b1 = scn.nextInt();
+int b2 = scn.nextInt();
+
+int d = getvalue(n,b1,b2);
+System.out.println(d);
+}
+public static int getvalue(int n , int b1, int b2){
+int s1 = getvalueindecimal(n,b1);
+int s2 = getvalueinbase(s1,b2); 
+return s2;
+} 
+public static int getvalueindecimal(int n , int b1){
+int result = 0 ;
+int r= 1;
+while(n>0){
+int temp = n%10;
+n = n/10;
+result += temp*r;
+r = r*b;
+}
+}
+public static int getvalueinbase(int s1 , int b2){
+int result = 0;
+int r = 1 ;
+while(n>0){
+int temp = n%b;
+n = n/b;
+result+= temp*r;
+r= r*10;
+}
+result result;
+}
+}
